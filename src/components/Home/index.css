@@ -1,0 +1,21 @@
+.graphContainer {
+  padding-top: 30px;
+  padding-right: 30px;
+  color: white;
+  height: 100vh;
+  padding-left: 100px;
+}
+.homeContainer {
+  background-color: black;
+}
+.graphContainer h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 10px;
+  color: orange;
+}
+.graphContainer p {
+  padding: 16px;
+}
+.crypto-coins-container {
+  margin-top: 50px;
+}

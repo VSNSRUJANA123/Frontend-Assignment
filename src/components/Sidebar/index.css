@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px; /* Adjust width as needed */
+  height: 100vh;
+  background-color: #252525;
+  transition: all 0.3s ease-in-out;
+  z-index: 10; /* Ensure sidebar is on top of content */
+}
+
+.sidebar.open {
+  width: 70px !important;
+  transform: translateX(0);
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+.hamburger-menu {
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.navbar-container {
+  padding: 15px;
+  background-color: black;
+  display: flex;
+  padding-left: 210px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  width: 100%;
+}
+.bitcoinIcon {
+  width: 50px;
+}
+
+.user-name {
+  color: orange;
+}
+.sidebar-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-items li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.nav-icon {
+  margin-right: 13px;
+  font-size: 20px;
+}
+
+.sidebar-items li a {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.trading-btn {
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  border: none;
+  background-color: orange;
+}
+.active {
+  font-weight: bold;
+  color: orange !important;
+}
+.pending {
+  font-weight: normal;
+  color: white;
+}
+.menu-icon {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.icon-div {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Media queries for responsive behavior (adjust as needed) */
+@media (max-width: 576px) {
+  .navbar-container {
+    padding-left: 80px;
+  }
+  .title h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar.closed {
+    transform: translateX(-200px); /* Adjust based on sidebar width */
+  }
+}
